@@ -677,7 +677,7 @@ var inBrowser = typeof window !== 'undefined';
   data: function data() {
     return {
       selectedDayEvents: {
-        date: 'none',
+        date: 'all',
         events: this.events || [] //default show all event
       }
     };
@@ -716,7 +716,7 @@ var inBrowser = typeof window !== 'undefined';
             curYear: dateObj.getFullYear(),
             curMonth: dateObj.getMonth(),
             curDate: dateObj.getDate(),
-            curEventsDate: 'none'
+            curEventsDate: 'all'
           }
         };
       }
@@ -730,7 +730,7 @@ var inBrowser = typeof window !== 'undefined';
           curYear: dateObj.getFullYear(),
           curMonth: dateObj.getMonth(),
           curDate: dateObj.getDate(),
-          curEventsDate: 'none'
+          curEventsDate: 'all'
         };
       }
     }
@@ -773,18 +773,18 @@ var inBrowser = typeof window !== 'undefined';
           date: this.calendarParams.curEventsDate,
           events: events
         };
-      } else {
+      } /*else {
         this.selectedDayEvents = {
           date: 'all',
           events: this.events
-        };
-      }
+        }
+        }*/
     },
     events: function events() {
-      this.selectedDayEvents = {
+      /*this.selectedDayEvents = {
         date: 'all',
         events: this.events || []
-      };
+      }*/
     }
   }
 });

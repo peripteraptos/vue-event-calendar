@@ -32,7 +32,7 @@ export default {
   data () {
     return {
       selectedDayEvents: {
-        date: 'none',
+        date: 'all',
         events: this.events || []  //default show all event
       }
     }
@@ -70,7 +70,7 @@ export default {
               curYear: dateObj.getFullYear(),
               curMonth: dateObj.getMonth(),
               curDate: dateObj.getDate(),
-              curEventsDate: 'none'
+              curEventsDate: 'all'
           }
         }
       }
@@ -84,7 +84,7 @@ export default {
           curYear: dateObj.getFullYear(),
           curMonth: dateObj.getMonth(),
           curDate: dateObj.getDate(),
-          curEventsDate: 'none'
+          curEventsDate: 'all'
         }
       }
     }
@@ -124,18 +124,18 @@ export default {
           date: this.calendarParams.curEventsDate,
           events
         }
-      } else {
+      } /*else {
         this.selectedDayEvents = {
           date: 'all',
           events: this.events
         }
-      }
+      }*/
     },
     events () {
-      this.selectedDayEvents = {
+      /*this.selectedDayEvents = {
         date: 'all',
         events: this.events || []
-      }
+      }*/
     }
   }
 }
@@ -311,7 +311,7 @@ export default {
     }
   }
   .events-wrapper{
-    border-radius: 10px;
+    /*border-radius: 10px;*/
     .cal-events{
       height: 95%;
       overflow-y: auto;
