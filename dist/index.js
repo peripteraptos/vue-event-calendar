@@ -677,7 +677,7 @@ var inBrowser = typeof window !== 'undefined';
   data: function data() {
     return {
       selectedDayEvents: {
-        date: 'all',
+        date: 'none',
         events: this.events || [] //default show all event
       }
     };
@@ -716,7 +716,7 @@ var inBrowser = typeof window !== 'undefined';
             curYear: dateObj.getFullYear(),
             curMonth: dateObj.getMonth(),
             curDate: dateObj.getDate(),
-            curEventsDate: 'all'
+            curEventsDate: 'none'
           }
         };
       }
@@ -730,7 +730,7 @@ var inBrowser = typeof window !== 'undefined';
           curYear: dateObj.getFullYear(),
           curMonth: dateObj.getMonth(),
           curDate: dateObj.getDate(),
-          curEventsDate: 'all'
+          curEventsDate: 'none'
         };
       }
     }

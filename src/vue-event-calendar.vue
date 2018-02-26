@@ -32,7 +32,7 @@ export default {
   data () {
     return {
       selectedDayEvents: {
-        date: 'all',
+        date: 'none',
         events: this.events || []  //default show all event
       }
     }
@@ -70,7 +70,7 @@ export default {
               curYear: dateObj.getFullYear(),
               curMonth: dateObj.getMonth(),
               curDate: dateObj.getDate(),
-              curEventsDate: 'all'
+              curEventsDate: 'none'
           }
         }
       }
@@ -84,7 +84,7 @@ export default {
           curYear: dateObj.getFullYear(),
           curMonth: dateObj.getMonth(),
           curDate: dateObj.getDate(),
-          curEventsDate: 'all'
+          curEventsDate: 'none'
         }
       }
     }
